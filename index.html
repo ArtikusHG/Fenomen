@@ -2,94 +2,113 @@
 <html>
 <meta charset="UTF-8">
 <head>
-<title>New tab</title>
-<script src="js/jquery.js" type="text/javascript" charset="UTF-8"></script>
-<script src="js/js.js" type="text/javascript" chrset="UTF-8"></script>
+	<title>New tab</title>
+	<style>
+		#timediv {
+			width: 400px;
+			height: 200px;
+			border: 3px solid white;
+			text-align: center;
+			margin: auto;
+		}
+		html {
+			min-height: 100%;
+		}
+		body {
+			color: white;
+			font-family: font;
+			background-repeat: no-repeat;
+			background-image: url('bg/1.jpg');
+			background-size: cover;
+			min-height: 100%;
+		}
+
+		#time {
+			font-size: 40pt;
+			margin-top: 27px;
+		}
+
+		#date {
+			font-size: 25pt;
+		}
+
+		@font-face {
+			font-family: font;
+			src: url(font.ttf);
+			font-weight: bold;
+		}
+
+		#quote {
+			position: relative;
+			top: 90%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-family: font;
+			font-size: 25pt;
+			color: white;
+			width: 1000px;
+			-webkit-line-clamp: 1;
+			text-overflow: ellipsis;
+		}
+
+		body {
+			background-size: cover;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			overflow: hidden;
+			opacity: 0.8;
+		}
+
+		#facebook {
+			left: 60%;
+			position: absolute;
+			top: 84%;
+			left
+		}
+
+		#weather {
+			position: absolute;
+			top: 84%;
+			left: 46%
+		}
+
+		#youtube {
+			position: absolute;
+			top: 84.7%;
+			left: 31.7%
+		}
+	</style>
 </head>
-<body onload="exec()" background="bg/1.jpg">
-<br>
-<div id="timediv">
-<h1 id="time">s</h1>
-<h1 id="date"></h1>
-<p id="quote">Just do it.</p>
-<center>
-<div id="facebook">
-<a href="https://www.facebook.com" target="_blank">
-<img src="img/facebook.png" width="80" height="80"></a>
-</div>
-<div id="youtube">
-<a href="https://www.youtube.com" target="_blank">
-<img src="img/youtube.png" width="85" height="85"></a>
-</div>
-<div id="weather">
-<a href="https://uk.news.yahoo.com/weather/" target="_blank">
-<img src="img/weather.png" height="90" width="90"></a>
-</div>
-</center>
-</div>
+
+<body>
+	<br>
+	<div id="timediv">
+		<h1 id="time">s</h1>
+		<h1 id="date"></h1>
+		<p id="quote">Just do it.</p>
+		<center>
+			<div id="facebook">
+				<a href="https://www.facebook.com" target="_blank">
+					<img src="img/facebook.png" width="80" height="80">
+				</a>
+			</div>
+			<div id="youtube">
+				<a href="https://www.youtube.com" target="_blank">
+					<img src="img/youtube.png" width="85" height="85">
+				</a>
+			</div>
+			<div id="weather">
+				<a href="https://uk.news.yahoo.com/weather/" target="_blank">
+					<img src="img/weather.png" height="90" width="90">
+				</a>
+			</div>
+		</center>
+	</div>
+	<script src="js/js.js"></script>
 </body>
-<style>
-#timediv {
-	width: 400px;
-	height: 200px;
-	border: 3px solid white;
-	text-align: center;
-	margin: auto;
-}
-body {
-	color: white;
-	font-family: font;
-}
-#time {
-	font-size: 40pt;
-	margin-top: 27px;
-}
-#date {
-	font-size: 25pt;
-}
-@font-face {
-    font-family: font;
-    src: url(font.ttf);
-    font-weight: bold;
-}
-#quote {
-	position: relative;
-	top: 90%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-family: font;
-	font-size: 25pt;
-	color: white;
-	width: 1000px;
-	-webkit-line-clamp: 1;
-	text-overflow: ellipsis;
-}
-body {
-	background-size: cover;
-	bottom: 0;
-	left: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	overflow: hidden;
-	opacity: 0.8;
-}
-#facebook {
-	left:60%;
-	position:absolute;
-	top:84%;
-	left
-}
-#weather {
-	position:absolute;
-	top:84%;
-	left:46%
-}
-#youtube {
-	position:absolute;
-	top:84.7%;
-	left:31.7%
-}
-</style>
+
 </html>
